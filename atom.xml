@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Lighter. Brighter.</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="/"/>
+  <updated>2021-08-23T04:56:32.472Z</updated>
+  <id>/</id>
+  
+  <author>
+    <name>light-ght</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>战地2042 与 使命召唤：先锋 的厮杀（未完成）</title>
+    <link href="/2042/01/01/Battlefield2042%20vs%20COD18/"/>
+    <id>/2042/01/01/Battlefield2042 vs COD18/</id>
+    <published>2041-12-31T16:00:00.000Z</published>
+    <updated>2021-08-23T04:56:32.472Z</updated>
+    
+    <summary type="html">
+    
+      战地2042 与 使命召唤：先锋 的情报统计
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="web" scheme="/tags/web/"/>
+    
+      <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Guten Tag !</title>
+    <link href="/2021/08/21/hello-world/"/>
+    <id>/2021/08/21/hello-world/</id>
+    <published>2021-08-21T01:20:01.000Z</published>
+    <updated>2021-08-26T03:04:01.216Z</updated>
+    
+    <summary type="html">
+    
+      The first blog in this continent
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="web" scheme="/tags/web/"/>
+    
+      <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-Theme-Sakura</title>
+    <link href="/2018/12/12/Hexo-Theme-Sakura/"/>
+    <id>/2018/12/12/Hexo-Theme-Sakura/</id>
+    <published>2018-12-12T14:16:01.000Z</published>
+    <updated>2020-03-15T19:41:30.000Z</updated>
+    
+    <summary type="html">
+    
+      hexo-sakura主题使用教程
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="web" scheme="/tags/web/"/>
+    
+      <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Die Verfassung</title>
+    <link href="/1920/02/01/Die%20Verfassung/"/>
+    <id>/1920/02/01/Die Verfassung/</id>
+    <published>1920-01-31T16:00:00.000Z</published>
+    <updated>2021-08-23T11:38:14.674Z</updated>
+    
+    <summary type="html">
+    
+      德意志第三帝国宪法性质文件 《二十五点纲领》
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="web" scheme="/tags/web/"/>
+    
+      <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Die Verfassung des Deutschen Reiches</title>
+    <link href="/1871/04/16/Verfassung%20des%20Deutschen%20Reiches/"/>
+    <id>/1871/04/16/Verfassung des Deutschen Reiches/</id>
+    <published>1871-04-15T15:55:00.000Z</published>
+    <updated>2021-08-25T07:41:24.072Z</updated>
+    
+    <summary type="html">
+    
+      《德意志（第二）帝国宪法》（记住了哦，好东西往往是需要挖掘的哦）
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="web" scheme="/tags/web/"/>
+    
+      <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+  </entry>
+  
+</feed>
