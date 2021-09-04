@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2021-08-23T04:56:32.472Z</updated>
+  <updated>2021-09-04T11:50:53.136Z</updated>
   <id>/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="/2042/01/01/Battlefield2042%20vs%20COD18/"/>
     <id>/2042/01/01/Battlefield2042 vs COD18/</id>
     <published>2041-12-31T16:00:00.000Z</published>
-    <updated>2021-08-23T04:56:32.472Z</updated>
+    <updated>2021-09-04T11:50:53.136Z</updated>
     
     <summary type="html">
     
@@ -32,8 +32,6 @@
       <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="web" scheme="/tags/web/"/>
-    
       <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
     
   </entry>
@@ -43,7 +41,7 @@
     <link href="/2021/08/28/CF1462E2%20Close%20Tuples%20(hard)/"/>
     <id>/2021/08/28/CF1462E2 Close Tuples (hard)/</id>
     <published>2021-08-28T02:08:00.000Z</published>
-    <updated>2021-08-28T03:48:36.004Z</updated>
+    <updated>2021-09-04T11:50:38.929Z</updated>
     
     <summary type="html">
     
@@ -51,10 +49,8 @@
     
     </summary>
     
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="题解" scheme="/categories/%E9%A2%98%E8%A7%A3/"/>
     
-    
-      <category term="web" scheme="/tags/web/"/>
     
       <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
     
@@ -65,7 +61,7 @@
     <link href="/2021/08/21/hello-world/"/>
     <id>/2021/08/21/hello-world/</id>
     <published>2021-08-21T01:20:01.000Z</published>
-    <updated>2021-08-26T03:04:01.216Z</updated>
+    <updated>2021-09-04T11:50:49.680Z</updated>
     
     <summary type="html">
     
@@ -76,8 +72,6 @@
       <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="web" scheme="/tags/web/"/>
-    
       <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
     
   </entry>
@@ -87,7 +81,7 @@
     <link href="/1920/02/01/Die%20Verfassung/"/>
     <id>/1920/02/01/Die Verfassung/</id>
     <published>1920-01-31T16:00:00.000Z</published>
-    <updated>2021-08-23T11:38:14.674Z</updated>
+    <updated>2021-09-04T11:50:35.728Z</updated>
     
     <summary type="html">
     
@@ -98,8 +92,6 @@
       <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="web" scheme="/tags/web/"/>
-    
       <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
     
   </entry>
@@ -109,7 +101,7 @@
     <link href="/1871/04/16/Verfassung%20des%20Deutschen%20Reiches/"/>
     <id>/1871/04/16/Verfassung des Deutschen Reiches/</id>
     <published>1871-04-15T15:55:00.000Z</published>
-    <updated>2021-08-25T07:41:24.072Z</updated>
+    <updated>2021-09-04T11:50:46.305Z</updated>
     
     <summary type="html">
     
@@ -119,8 +111,6 @@
     
       <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
     
-    
-      <category term="web" scheme="/tags/web/"/>
     
       <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
     

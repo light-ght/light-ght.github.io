@@ -79,7 +79,7 @@
     <div class="focusinfo no-select">
       <div class="header-tou">
         <a href="https://reich-iv.cf">
-          <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.4.5.3.2/avatar.png">
+          <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.5/avatar.png">
         </a>
       </div>
       <div class="header-info">
@@ -96,7 +96,7 @@
               
                 <li>
                   <a href="http://github.com/light-ght" target="_blank" class="social-github" title="github">
-                    <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.4.5.3.2/githubb.png">
+                    <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.5/githubb.png">
                   </a>
                 </li>
               
@@ -104,7 +104,7 @@
               
                 <li>
                   <a href="https://www.luogu.com.cn/user/426545" target="_blank" class="social-github" title="luogu">
-                    <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.4.5.3.2/luogu.png">
+                    <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.5/luogu.png">
                   </a>
                 </li>
               
@@ -185,16 +185,16 @@
                   <ul class="sub-menu">
                     
                       <li>
-                        <a href="/categories/技术/">
-                          <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                          题解
+                        <a href="/categories/生活/">
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          生活
                         </a>
                       </li>
                     
                       <li>
-                        <a href="/categories/生活/">
-                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                          生活
+                        <a href="/categories/题解/">
+                          <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                          题解
                         </a>
                       </li>
                     
@@ -289,29 +289,121 @@
   
   <div id="content" class="site-content">
     <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-      ---
+      <!DOCTYPE html>
 
-layout: false
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title>SCP：您已被外星人劫持</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: hidden;
+            color:#e6922a;
+        }
+    </style>
+</head>
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+<form name="loading"> 
+　 <p align="center"> <font color="#0066ff" size="4">SCP主机指令：为防止高危外星生物登陆，正在强行跳转到博客主站</font><font color="#0066ff" size="4" face="Arial">···</font>
+　　<input type="text" name="chart" size="46" style="font-family:Arial; font-weight:bolder; color:#0066ff; background-color:#fef4d9; padding:1px; border-style:none;"> 
+　 　<input type="text" name="percent" size="47" style="color:#0066ff; text-align:center; border-width:medium; border-style:none;"> 
+　　<script>
+var bar=0　 
+var line="|"　 
+var amount="|"　 
+count()　 
+function count(){　 
+bar=bar+1　 
+amount =amount + line　 
+document.loading.chart.value=amount　 
+document.loading.percent.value=bar+"%"　 
+if (bar<49)　 
+{setTimeout("count()",40);}　
+else if (bar<98)　 
+{setTimeout("count()",90);}
+else if (bar<100)　 
+{setTimeout("count()",1400);}　
+else　 
+{window.location = "https://reich-iv.cf";}　 
+}</script> 
+　</p> 
+</form>
+    <canvas id="canvas"></canvas>
+    
+    <script type="text/javascript">
+        var canvas = document.getElementById("canvas"),
+            context = canvas.getContext("2d");
 
----<!doctype html>
-<html>
-	<head><meta name="generator" content="Hexo 3.9.0">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="format-detection" content="telephone=no">
-		<title>404</title>
-	</head>
-	<body>
+        var fontSize = 12,
+            listText = "abcdefghijklmnopqrstuvwxyz        ".split(""),
+            column, row,
+            listColumn = [];
 
-      	<p>404页面</p>
+        function draw() {
+            //画背景
+            context.fillStyle = "rgba(0, 0, 0, 0.05)";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+            context.save();
 
-      	<a>返回主页</a>
-	</body>
+            //画Logo
+            context.shadowColor = "#074425";
+            context.shadowBlur = parseInt(Math.random() * 40 + 1);
+            context.font = "bold 36px Arial";
+            context.fillStyle = "#eefbf5";
+            context.fillText("SCP WARNING：", (canvas.width / 2 - context.measureText("SCP WARNING：").width / 2), canvas.height - 200);
+            context.fillText("此页面已被外星人劫持，已向本页面下达404命令", (canvas.width / 2 - context.measureText("此页面已被外星人劫持，已向本页面下达404命令").width / 2), canvas.height - 150);
+			
+            
+
+            //画代码
+            context.restore();
+            context.font = "normal " + fontSize + "px Arial";
+            context.fillStyle = "#12ee46";
+            for (var i = 0; i < column; i++) {
+                if (Math.random() > 0.5) {
+                    var str = listText[parseInt(Math.random() * listText.length)];
+                    context.fillText(str, i * fontSize, listColumn[i] * fontSize);
+                    listColumn[i] += 1;
+                    if (listColumn[i] >= row) {
+                        listColumn[i] = 0;
+                    }
+                }
+            }
+        }
+
+        function resize() {
+            canvas.width = window.innerWidth - 3;
+            canvas.height = window.innerHeight - 3;
+
+            column = canvas.width / fontSize,
+            row = canvas.height / fontSize;
+
+            for (var i = 0; i < column; i++) {
+                listColumn[i] = 1;
+            }
+        }
+
+        window.addEventListener("resize", resize);
+
+        canvas.addEventListener("mousedown", function () {
+            clearInterval(timer);
+            timer = setInterval(draw, 20);
+        });
+
+        canvas.addEventListener("mouseup", function () {
+            clearInterval(timer);
+            timer = setInterval(draw, 40);
+        });
+
+        resize();
+        var timer = setInterval(draw, 40);
+
+    </script>
+</body>
 </html>
-
-
       <!-- .entry-content -->
       
 <div id="vcomments"></div>
@@ -332,8 +424,8 @@ layout: false
         <div class="reward-open">赏
           <div class="reward-main">
             <ul class="reward-row">
-              <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.4.5.3.2/donate/alipay.jpg"></li>
-              <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.4.5.3.2/donate/wechatpay.jpg"></li>
+              <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.5/donate/alipay.jpg"></li>
+              <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.5/donate/wechatpay.jpg"></li>
             </ul>
           </div>
         </div>
@@ -352,7 +444,7 @@ layout: false
       <!-- #post-## -->
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="/about/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.4.5.3.2/avatar.png" itemprop="image" alt="泯落の帝国" height="70" width="70"></a>
+          <a href="/about/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.5/avatar.png" itemprop="image" alt="泯落の帝国" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
@@ -419,7 +511,7 @@ layout: false
     </div>
     <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;"><i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> Hosted by light-ght, Powered by Hexo. Unter dem Schutz der G.S.P. 
+        <span style="color: #b9b9b9;"><i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> Hosted by light-ght. Unter dem Schutz der G.S.P. 
         </span>
       </p>
     </div>
@@ -601,7 +693,7 @@ $(document).ready(function() {
   </section>
   <div id="mo-nav" class="">
   <div class="m-avatar">
-    <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.4.5.3.2/avatar.png">
+    <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.5/avatar.png">
   </div>
   <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">light-ght’s泯落の帝国</p>
   <p style="text-align: center; word-spacing: 20px;">
@@ -634,16 +726,16 @@ $(document).ready(function() {
           <ul class="sub-menu">
             
               <li>
-                <a href="/categories/技术/">
-                  <i class="fa fa-file-code-o" aria-hidden="true"></i>
-                  题解
+                <a href="/categories/生活/">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  生活
                 </a>
               </li>
             
               <li>
-                <a href="/categories/生活/">
-                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                  生活
+                <a href="/categories/题解/">
+                  <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                  题解
                 </a>
               </li>
             
@@ -779,7 +871,7 @@ $(document).ready(function() {
 
     preload="auto"
 
-    volume="0.3"
+    volume="0.2"
 
     mutex="true"
 
@@ -802,8 +894,6 @@ $(document).ready(function() {
   <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/clickBom.js"></script>
   
   <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
-  
- 
 
 </body>
 </html>
