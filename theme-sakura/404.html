@@ -1,0 +1,116 @@
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title>SCP：页面已被外星人劫持</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: hidden;
+            color:#e6922a;
+        }
+    </style>
+</head>
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+<form name="loading"> 
+　 <p align="center"> <font color="#0066ff" size="4">SCP主机指令：为防止高危外星生物登陆，正在强行跳转到博客主站</font><font color="#0066ff" size="4" face="Arial">···</font>
+　　<input type="text" name="chart" size="46" style="font-family:Arial; font-weight:bolder; color:#0066ff; background-color:#fef4d9; padding:1px; border-style:none;"> 
+　 　<input type="text" name="percent" size="47" style="color:#0066ff; text-align:center; border-width:medium; border-style:none;"> 
+　　<script>
+var bar=0　 
+var line="|"　 
+var amount="|"　 
+count()　 
+function count(){　 
+bar=bar+1　 
+amount =amount + line　 
+document.loading.chart.value=amount　 
+document.loading.percent.value=bar+"%"　 
+if (bar<49)　 
+{setTimeout("count()",40);}　
+else if (bar<98)　 
+{setTimeout("count()",90);}
+else if (bar<100)　 
+{setTimeout("count()",1400);}　
+else　 
+{window.location = "https://reich-iv.cf";}　 
+}</script> 
+　</p> 
+</form>
+    <canvas id="canvas"></canvas>
+    
+    <script type="text/javascript">
+        var canvas = document.getElementById("canvas"),
+            context = canvas.getContext("2d");
+
+        var fontSize = 12,
+            listText = "abcdefghijklmnopqrstuvwxyz        ".split(""),
+            column, row,
+            listColumn = [];
+
+        function draw() {
+            //画背景
+            context.fillStyle = "rgba(0, 0, 0, 0.05)";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+            context.save();
+
+            //画Logo
+            context.shadowColor = "#074425";
+            context.shadowBlur = parseInt(Math.random() * 40 + 1);
+            context.font = "bold 36px Arial";
+            context.fillStyle = "#eefbf5";
+            context.fillText("SCP WARNING：", (canvas.width / 2 - context.measureText("SCP WARNING：").width / 2), canvas.height - 200);
+            context.fillText("此页面已被外星人劫持，已向本页面下达404命令", (canvas.width / 2 - context.measureText("此页面已被外星人劫持，已向本页面下达404命令").width / 2), canvas.height - 150);
+			
+            
+
+            //画代码
+            context.restore();
+            context.font = "normal " + fontSize + "px Arial";
+            context.fillStyle = "#12ee46";
+            for (var i = 0; i < column; i++) {
+                if (Math.random() > 0.5) {
+                    var str = listText[parseInt(Math.random() * listText.length)];
+                    context.fillText(str, i * fontSize, listColumn[i] * fontSize);
+                    listColumn[i] += 1;
+                    if (listColumn[i] >= row) {
+                        listColumn[i] = 0;
+                    }
+                }
+            }
+        }
+
+        function resize() {
+            canvas.width = window.innerWidth - 3;
+            canvas.height = window.innerHeight - 3;
+
+            column = canvas.width / fontSize,
+            row = canvas.height / fontSize;
+
+            for (var i = 0; i < column; i++) {
+                listColumn[i] = 1;
+            }
+        }
+
+        window.addEventListener("resize", resize);
+
+        canvas.addEventListener("mousedown", function () {
+            clearInterval(timer);
+            timer = setInterval(draw, 20);
+        });
+
+        canvas.addEventListener("mouseup", function () {
+            clearInterval(timer);
+            timer = setInterval(draw, 40);
+        });
+
+        resize();
+        var timer = setInterval(draw, 40);
+
+    </script>
+</body>
+</html>
+
