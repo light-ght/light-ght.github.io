@@ -4,7 +4,7 @@
   <url>
     <loc>/links/index.html</loc>
     
-    <lastmod>2021-09-07</lastmod>
+    <lastmod>2021-09-08</lastmod>
     
   </url>
   
@@ -86,14 +86,14 @@
   </url>
   
   <url>
-    <loc>/client/index.html</loc>
+    <loc>/comment/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>/comment/index.html</loc>
+    <loc>/client/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -107,14 +107,14 @@
   </url>
   
   <url>
-    <loc>/tags/index.html</loc>
+    <loc>/rss/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>/rss/index.html</loc>
+    <loc>/tags/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -130,7 +130,7 @@
 
   <url>
     <loc></loc>
-    <lastmod>2021-09-07</lastmod>
+    <lastmod>2021-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -138,7 +138,7 @@
   
   <url>
     <loc>/tags/%E6%80%BB%E8%A7%88/</loc>
-    <lastmod>2021-09-07</lastmod>
+    <lastmod>2021-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -147,14 +147,14 @@
   
   <url>
     <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2021-09-07</lastmod>
+    <lastmod>2021-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>/categories/%E9%A2%98%E8%A7%A3/</loc>
-    <lastmod>2021-09-07</lastmod>
+    <lastmod>2021-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
