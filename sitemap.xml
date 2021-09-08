@@ -86,14 +86,14 @@
   </url>
   
   <url>
-    <loc>/comment/index.html</loc>
+    <loc>/client/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>/client/index.html</loc>
+    <loc>/comment/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -146,14 +146,14 @@
 
   
   <url>
-    <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>/categories/%E9%A2%98%E8%A7%A3/</loc>
     <lastmod>2021-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/categories/%E9%A2%98%E8%A7%A3/</loc>
+    <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2021-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
