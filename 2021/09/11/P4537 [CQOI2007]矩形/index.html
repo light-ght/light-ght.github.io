@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Category: 题解 | Lighter. Brighter.</title>
+  <title itemprop="name">蒟蒻专属の题解 | Lighter. Brighter.</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -331,171 +331,201 @@
   </div>
 </header>
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img data-src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/2.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/CDN@1.8/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/2.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      蒟蒻专属の题解</h1>
+      <p class="entry-census">
+        <span>
+          <a href="">
+            <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/avatar.png">
+          </a>
+        </span>
+        <span>
+          <a href=""></a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2021-9-11<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">蒟蒻OIer专属C++题解区</h1>
-    <span class="cat-des">
-      <p>OI — Only Input</p>
-    </span>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h5 id="本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"><a href="#本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。" class="headerlink" title="本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"></a>本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。</h5><h2 id="写在最前。"><a href="#写在最前。" class="headerlink" title="写在最前。"></a>写在最前。</h2><h3 id="今天是2021年9月11日，“9·11”事件二十年。为所有在国际恐怖主义袭击下与在反恐斗争丧生的仁人志士默哀。"><a href="#今天是2021年9月11日，“9·11”事件二十年。为所有在国际恐怖主义袭击下与在反恐斗争丧生的仁人志士默哀。" class="headerlink" title="今天是2021年9月11日，“9·11”事件二十年。为所有在国际恐怖主义袭击下与在反恐斗争丧生的仁人志士默哀。"></a>今天是2021年9月11日，“9·11”事件二十年。为所有在国际恐怖主义袭击下与在反恐斗争丧生的仁人志士默哀。</h3><h1 id="P4537-CQOI2007-矩形"><a href="#P4537-CQOI2007-矩形" class="headerlink" title="P4537 [CQOI2007]矩形"></a>P4537 [CQOI2007]矩形</h1><h2 id="dfs"><a href="#dfs" class="headerlink" title="dfs"></a>dfs</h2><p><a href="https://www.luogu.com.cn/problem/P4537" target="_blank" rel="noopener">题目</a></p>
+<p><a href="https://www.luogu.com.cn/blog/Rstar-PanzerTigerII/solution-p4537" target="_blank" rel="noopener"><strong>同步于洛谷博客</strong></a></p>
+<p>据说这题以前是紫色的？？？感觉错过了一个亿的Exp（做个<a href="https://www.luogu.com.cn/problem/P1790" target="_blank" rel="noopener"><strong>双倍经验</strong> </a>压压惊）</p>
+<h2 id="大致分析"><a href="#大致分析" class="headerlink" title="大致分析"></a>大致分析</h2><ul>
+<li><p>维护两个边界 $ x\,,y$，如果超出边界 ${a\,, b\,}$ 直接使答案计数器$+1$。由于满足一搜到底的结构，显而易见可以使用<del>爆搜</del> <code>dfs</code></p>
+</li>
+<li><p>实现过程中，要注意<strong>判重</strong>——使用一个数组来记录是否已经访问过。</p>
+</li>
+<li><p>同时也需要注意判重数组的赋初值、回溯赋值等细节。</p>
+</li>
+</ul>
+<p>详细说明请看代码注释。</p>
+<p><del>不过这数据范围给打表开了一扇窗······</del></p>
+<h2 id="具体实现-具体说明（dfs版）"><a href="#具体实现-具体说明（dfs版）" class="headerlink" title="具体实现+具体说明（dfs版）"></a>具体实现+具体说明（dfs版）</h2><p>只贴<strong>核心代码：</strong>（注：本蒟蒻在某些小小的地方做了个反作弊，相信各巨佬一定已经发现了）</p>
+<pre><code class="cpp">
+int a,b,ans;
+int X[]={1,-1,0,0},Y[]={0,0,1,-1};    //移动操作
+bool been[10][10];    //been[]是标记是否已经访问过の数组 
+
+void pan(int x,int y)    //dfs，对象为两个边界 
+{
+    if(x&lt;1||y&lt;1||x&gt;=a||y&gt;=b)ans++;    //超出边界，ans+1 
+    else
+    {
+        been[x][y]=true;    //预设该位置已经访问过，准备dfs
+        for(int i=0;i&lt;4;i++)          
+            if(!been[x+X[i]][y+Y[i]])  
+                pan(x+X[i],y+Y[i]);        
+        been[x][y]=false;    //dfs完成后回溯
+    }return; //啥也不干
+}
+int main()
+{
+ios::sync_with_stdio(0);
+cin.tie(0)；cout.tie(0);//加速cin、cout(不建议使用，加速完也没有scanf/printf快) 
+    cin&gt;&gt;a&gt;&gt;b;
+    for(int i=1;i&lt;a;i++)    //第一次以任意一个方向开始dfs。对结果无影响
+    {
+        memset(been,false,sizeof been);    //初始化been数组为未访问
+        been[i][0]=true;    //记录访问
+        pan(i,1);    
+    }
+    for(int i=1;i&lt;b;i++)    //另外一个方向のdfs同理
+    {
+        memset(been,false,sizeof been);
+        been[0][i]=true;
+        pan(1,i);
+    }
+    cout&lt;&lt;ans;
+    return 0;
+//By xajdfz OIer ght, programme v1.0.00.0
+//Developed by GHT&#39;s Lab 2021-2021, GHT&#39;s 蒟蒻工厂. All rights reserved.
+}
+
+</code></pre>
+<p><strong>完</strong></p>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/donate/alipay.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/donate/wechatpay.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2041/09/11/快到离谱的输入输出/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/CDN@1.8/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/1.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/1.jpg">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                快到离谱的输入输出</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/CDN@1.8/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/4.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/4.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                蒟蒻专属の题解</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-    蒟蒻专属の题解</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-9-11</div>
-    <p>
-    P4537 [CQOI2007] 矩形</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-    蒟蒻专属の题解</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-8-28</div>
-    <p>
-    CF1462E2 Close Tuples (hard version)</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "HujbvJPMpLmtlEsiXTrrhMkY-MdYXbMMI",
+        appKey: "ctiW96pu998MLFLi7HXe0r1G",
+        path: window.location.pathname,
+        placeholder: "说真话有时是困难的，但却正是这个世界需要的..."
+      })
+  }
+</script>
 
-
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/avatar.png" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>The Only Thing That's Changed is EVERYTHING .</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
 
-<!-- 
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-    蒟蒻专属の题解</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-9-11</div>
-    <p>
-    P4537 [CQOI2007] 矩形</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-    蒟蒻专属の题解</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-8-28</div>
-    <p>
-    CF1462E2 Close Tuples (hard version)</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
 
- -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>

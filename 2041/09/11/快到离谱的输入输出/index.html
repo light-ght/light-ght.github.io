@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Category: 题解 | Lighter. Brighter.</title>
+  <title itemprop="name">快到离谱的输入输出 | Lighter. Brighter.</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -331,171 +331,199 @@
   </div>
 </header>
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img data-src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/banner/coding.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/1.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/CDN@1.8/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/1.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      快到离谱的输入输出</h1>
+      <p class="entry-census">
+        <span>
+          <a href="">
+            <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/avatar.png">
+          </a>
+        </span>
+        <span>
+          <a href=""></a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2041-9-11<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">蒟蒻OIer专属C++题解区</h1>
-    <span class="cat-des">
-      <p>OI — Only Input</p>
-    </span>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h2 id="写在最前。"><a href="#写在最前。" class="headerlink" title="写在最前。"></a>写在最前。</h2><h3 id="今天是2021年9月11日，“9·11”事件二十年。为所有在国际恐怖主义袭击下与在反恐斗争丧生的仁人志士默哀。"><a href="#今天是2021年9月11日，“9·11”事件二十年。为所有在国际恐怖主义袭击下与在反恐斗争丧生的仁人志士默哀。" class="headerlink" title="今天是2021年9月11日，“9·11”事件二十年。为所有在国际恐怖主义袭击下与在反恐斗争丧生的仁人志士默哀。"></a>今天是2021年9月11日，“9·11”事件二十年。为所有在国际恐怖主义袭击下与在反恐斗争丧生的仁人志士默哀。</h3><h1 id="超级输入输出"><a href="#超级输入输出" class="headerlink" title="超级输入输出"></a>超级输入输出</h1><pre><code class="cpp">
+#ifdef ONLINE_JUDGE
+#define getchar()(p1==p2&amp;&amp;(p2=(p1=buf)+fread(buf,1,1&lt;&lt;21,stdin),p1==p2)?EOF:*p1++)
+char buf[1&lt;&lt;21],*p1=buf,*p2=buf;
+#endif
+//#define int long long //酌情使用
+template&lt;typename T&gt;inline void read(T&amp; ret) {
+    ret=0;T f=1;char ch=getchar();
+    while (ch&lt;&#39;0&#39;||ch&gt;&#39;9&#39;) {if (ch==&#39;-&#39;) f=-f;ch=getchar();}
+    while (ch&gt;=&#39;0&#39;&amp;&amp;ch&lt;=&#39;9&#39;) ret=ret*10+ch-&#39;0&#39;,ch=getchar();
+    ret*=f;
+}
+template &lt;typename T,typename... Args&gt; inline void read(T&amp; t, Args&amp;... args)
+{
+    read(t);read(args...);
+}
+char buffer[1&lt;&lt;21];
+int p11=-1;
+const int p22=(1&lt;&lt;21)-1;
+inline void flush(){
+  fwrite(buffer,1,p11+1,stdout),p11=-1;
+}
+inline void putc(const char &amp;x){
+  if (p11==p22)flush();
+  buffer[++p11]=x;
+}
+template&lt;typename T&gt;inline void write(T x){
+  static char buf[15];
+  static T len=-1;
+  if (x&gt;=0){
+    do{
+      buf[++len]=x%10+48,x/=10;
+    }while(x);
+  } else{
+    putc(&#39;-&#39;);
+    do{
+      buf[++len]=-(x%10)+48,x/=10;
+    }while(x);
+  }
+  while(len&gt;=0){
+    putc(buf[len]),--len;
+  }
+}
+template&lt;typename T&gt;inline void wrti(T x){
+    write(x),putc(&#39;\n&#39;);
+}
+
+</code></pre>
+<p>输出最后加上flush();</p>
+<h3 id="附：字符串快读"><a href="#附：字符串快读" class="headerlink" title="附：字符串快读"></a>附：字符串快读</h3><pre><code class="cpp">inline string red(){
+    char ch=getchar();
+    string st1=&quot;&quot;;
+    while (!((ch&gt;=&#39;A&#39;)&amp;&amp;(ch&lt;=&#39;z&#39;)))
+      ch=getchar();
+    while ((ch&gt;=&#39;A&#39;)&amp;&amp;(ch&lt;=&#39;z&#39;)) 
+      st1+=ch,ch=getchar();
+    return st1;
+}
+</code></pre>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/donate/alipay.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/donate/wechatpay.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2042/01/01/Battlefield2042 vs COD18/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/CDN@1.8/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.4.1/games/PK.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.4.1/games/PK.png">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                战地2042 与 使命召唤：先锋 的厮杀（未完成）</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2021/09/11/P4537 [CQOI2007]矩形/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/CDN@1.8/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/2.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/2.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                蒟蒻专属の题解</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-    蒟蒻专属の题解</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-9-11</div>
-    <p>
-    P4537 [CQOI2007] 矩形</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-    蒟蒻专属の题解</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-8-28</div>
-    <p>
-    CF1462E2 Close Tuples (hard version)</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "HujbvJPMpLmtlEsiXTrrhMkY-MdYXbMMI",
+        appKey: "ctiW96pu998MLFLi7HXe0r1G",
+        path: window.location.pathname,
+        placeholder: "说真话有时是困难的，但却正是这个世界需要的..."
+      })
+  }
+</script>
 
-
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/avatar.png" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>The Only Thing That's Changed is EVERYTHING .</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
 
-<!-- 
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-    蒟蒻专属の题解</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-9-11</div>
-    <p>
-    P4537 [CQOI2007] 矩形</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/09/11/P4537 [CQOI2007]矩形/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@1.8/code/4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-    蒟蒻专属の题解</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2021-8-28</div>
-    <p>
-    CF1462E2 Close Tuples (hard version)</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2021/08/28/CF1462E2 Close Tuples (hard)/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
 
- -->
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
