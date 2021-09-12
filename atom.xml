@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2021-09-11T11:24:26.922Z</updated>
+  <updated>2021-09-12T01:31:34.453Z</updated>
   <id>/</id>
   
   <author>
@@ -17,15 +17,15 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>战地2042 与 使命召唤：先锋 的厮杀（未完成）</title>
-    <link href="/2042/01/01/Battlefield2042%20vs%20COD18/"/>
-    <id>/2042/01/01/Battlefield2042 vs COD18/</id>
-    <published>2041-12-31T16:00:00.000Z</published>
-    <updated>2021-09-11T11:24:26.922Z</updated>
+    <title>Guten Tag !</title>
+    <link href="/2042/08/21/hello-world/"/>
+    <id>/2042/08/21/hello-world/</id>
+    <published>2042-08-21T01:20:01.000Z</published>
+    <updated>2021-09-12T01:31:34.453Z</updated>
     
     <summary type="html">
     
-      战地2042 与 使命召唤：先锋 的情报统计
+      The first blog in this continent
     
     </summary>
     
@@ -90,26 +90,6 @@
     </summary>
     
       <category term="题解" scheme="/categories/%E9%A2%98%E8%A7%A3/"/>
-    
-    
-      <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Guten Tag !</title>
-    <link href="/2021/08/21/hello-world/"/>
-    <id>/2021/08/21/hello-world/</id>
-    <published>2021-08-21T01:20:01.000Z</published>
-    <updated>2021-09-12T01:28:51.622Z</updated>
-    
-    <summary type="html">
-    
-      The first blog in this continent
-    
-    </summary>
-    
-      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
       <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
