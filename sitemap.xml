@@ -100,14 +100,14 @@
   </url>
   
   <url>
-    <loc>/comment/index.html</loc>
+    <loc>/lab/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>/lab/index.html</loc>
+    <loc>/comment/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -121,14 +121,14 @@
   </url>
   
   <url>
-    <loc>/video/index.html</loc>
+    <loc>/tags/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>/tags/index.html</loc>
+    <loc>/video/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -137,7 +137,7 @@
 
   <url>
     <loc></loc>
-    <lastmod>2021-09-25</lastmod>
+    <lastmod>2021-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -145,7 +145,7 @@
   
   <url>
     <loc>/tags/%E6%80%BB%E8%A7%88/</loc>
-    <lastmod>2021-09-25</lastmod>
+    <lastmod>2021-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -154,21 +154,21 @@
   
   <url>
     <loc>/categories/%E9%A2%98%E8%A7%A3/</loc>
-    <lastmod>2021-09-25</lastmod>
+    <lastmod>2021-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2021-09-25</lastmod>
+    <lastmod>2021-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2021-09-25</lastmod>
+    <lastmod>2021-10-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
