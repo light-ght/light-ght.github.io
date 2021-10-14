@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2021-09-12T01:31:34.453Z</updated>
+  <updated>2021-10-08T14:00:53.417Z</updated>
   <id>/</id>
   
   <author>
@@ -17,31 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Guten Tag !</title>
-    <link href="/2042/08/21/hello-world/"/>
-    <id>/2042/08/21/hello-world/</id>
-    <published>2042-08-21T01:20:01.000Z</published>
-    <updated>2021-09-12T01:31:34.453Z</updated>
-    
-    <summary type="html">
-    
-      The first blog in this continent
-    
-    </summary>
-    
-      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
-    
-  </entry>
-  
-  <entry>
     <title>快到离谱的输入输出</title>
     <link href="/2041/09/11/%E5%BF%AB%E5%88%B0%E7%A6%BB%E8%B0%B1%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/"/>
     <id>/2041/09/11/快到离谱的输入输出/</id>
     <published>2041-09-11T10:59:00.000Z</published>
-    <updated>2021-09-11T11:27:37.253Z</updated>
+    <updated>2021-10-08T14:00:53.417Z</updated>
     
     <summary type="html">
     
@@ -57,11 +37,31 @@
   </entry>
   
   <entry>
+    <title>一些思考</title>
+    <link href="/2021/10/08/sikao/"/>
+    <id>/2021/10/08/sikao/</id>
+    <published>2021-10-08T13:42:00.000Z</published>
+    <updated>2021-10-14T13:14:10.738Z</updated>
+    
+    <summary type="html">
+    
+      一些关于政治体制、国家前途的思考
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
+    
+  </entry>
+  
+  <entry>
     <title>蒟蒻专属の题解</title>
     <link href="/2021/09/11/P4537%20%5BCQOI2007%5D%E7%9F%A9%E5%BD%A2/"/>
     <id>/2021/09/11/P4537 [CQOI2007]矩形/</id>
     <published>2021-09-11T10:59:00.000Z</published>
-    <updated>2021-09-11T11:25:04.726Z</updated>
+    <updated>2021-10-14T12:48:14.802Z</updated>
     
     <summary type="html">
     
@@ -97,6 +97,26 @@
   </entry>
   
   <entry>
+    <title>Guten Tag !</title>
+    <link href="/2021/08/20/hello-world/"/>
+    <id>/2021/08/20/hello-world/</id>
+    <published>2021-08-20T01:20:01.000Z</published>
+    <updated>2021-10-09T11:38:21.882Z</updated>
+    
+    <summary type="html">
+    
+      The first blog in this continent
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Die Verfassung</title>
     <link href="/1920/02/01/Die%20Verfassung/"/>
     <id>/1920/02/01/Die Verfassung/</id>
@@ -121,7 +141,7 @@
     <link href="/1871/04/16/Verfassung%20des%20Deutschen%20Reiches/"/>
     <id>/1871/04/16/Verfassung des Deutschen Reiches/</id>
     <published>1871-04-15T15:55:00.000Z</published>
-    <updated>2021-09-25T13:14:38.809Z</updated>
+    <updated>2021-10-14T12:48:27.388Z</updated>
     
     <summary type="html">
     
