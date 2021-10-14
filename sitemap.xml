@@ -100,14 +100,14 @@
   </url>
   
   <url>
-    <loc>/client/index.html</loc>
+    <loc>/comment/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>/comment/index.html</loc>
+    <loc>/client/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -128,14 +128,14 @@
   </url>
   
   <url>
-    <loc>/tags/index.html</loc>
+    <loc>/video/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>/video/index.html</loc>
+    <loc>/tags/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
