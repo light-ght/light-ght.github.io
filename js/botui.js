@@ -89,7 +89,7 @@ function bot_ui_ini() {
                                 }).then(function () {
 									botui.message.add({
 										delay: 1800,
-										content: "更喜欢的是军事游戏和历史。当然，GalGame我也不会拒绝(doge)"
+										content: "更喜欢的是军事、历史和有关的游戏。当然，GalGame我也不会拒绝(doge)"
 									}).then(function () {
 										botui.action.button({
 											delay: 2100,
