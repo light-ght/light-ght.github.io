@@ -128,14 +128,14 @@
   </url>
   
   <url>
-    <loc>/tags/index.html</loc>
+    <loc>/video/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>/video/index.html</loc>
+    <loc>/tags/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -160,14 +160,14 @@
 
   
   <url>
-    <loc>/categories/%E5%8F%B2%E6%94%BF/</loc>
+    <loc>/categories/%E9%A2%98%E8%A7%A3/</loc>
     <lastmod>2021-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/categories/%E9%A2%98%E8%A7%A3/</loc>
+    <loc>/categories/%E5%8F%B2%E6%94%BF/</loc>
     <lastmod>2021-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
