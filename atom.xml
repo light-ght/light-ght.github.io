@@ -37,6 +37,26 @@
   </entry>
   
   <entry>
+    <title>一些思考</title>
+    <link href="/2022/10/08/sikao/"/>
+    <id>/2022/10/08/sikao/</id>
+    <published>2022-10-08T13:42:00.000Z</published>
+    <updated>2021-10-22T14:17:10.276Z</updated>
+    
+    <summary type="html">
+    
+      一些关于政治体制、国家前途的思考
+    
+    </summary>
+    
+      <category term="史政" scheme="/categories/%E5%8F%B2%E6%94%BF/"/>
+    
+    
+      <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
+    
+  </entry>
+  
+  <entry>
     <title>pb_ds（平板电视）</title>
     <link href="/2021/10/22/pb-ds/"/>
     <id>/2021/10/22/pb-ds/</id>
@@ -57,19 +77,19 @@
   </entry>
   
   <entry>
-    <title>一些思考</title>
-    <link href="/2021/10/08/sikao/"/>
-    <id>/2021/10/08/sikao/</id>
-    <published>2021-10-08T13:42:00.000Z</published>
-    <updated>2021-10-22T12:46:04.579Z</updated>
+    <title>OI杂项</title>
+    <link href="/2021/10/22/chaos/"/>
+    <id>/2021/10/22/chaos/</id>
+    <published>2021-10-22T10:09:00.000Z</published>
+    <updated>2021-10-22T14:18:20.045Z</updated>
     
     <summary type="html">
     
-      一些关于政治体制、国家前途的思考
+      一些小东西的总结(updating)
     
     </summary>
     
-      <category term="史政" scheme="/categories/%E5%8F%B2%E6%94%BF/"/>
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
