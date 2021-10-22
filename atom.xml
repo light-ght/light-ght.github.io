@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2021-10-19T11:44:34.595Z</updated>
+  <updated>2021-10-22T12:46:26.579Z</updated>
   <id>/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="/2041/09/11/fread/"/>
     <id>/2041/09/11/fread/</id>
     <published>2041-09-11T10:59:00.000Z</published>
-    <updated>2021-10-19T11:44:34.595Z</updated>
+    <updated>2021-10-22T12:46:26.579Z</updated>
     
     <summary type="html">
     
@@ -37,11 +37,31 @@
   </entry>
   
   <entry>
+    <title>pb_ds（平板电视）</title>
+    <link href="/2021/10/22/pb-ds/"/>
+    <id>/2021/10/22/pb-ds/</id>
+    <published>2021-10-22T12:59:00.000Z</published>
+    <updated>2021-10-22T13:48:03.729Z</updated>
+    
+    <summary type="html">
+    
+      一种奇怪的卡常小技巧
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一些思考</title>
     <link href="/2021/10/08/sikao/"/>
     <id>/2021/10/08/sikao/</id>
     <published>2021-10-08T13:42:00.000Z</published>
-    <updated>2021-10-17T10:09:38.197Z</updated>
+    <updated>2021-10-22T12:46:04.579Z</updated>
     
     <summary type="html">
     
@@ -61,7 +81,7 @@
     <link href="/2021/09/11/P4537%20%5BCQOI2007%5D%E7%9F%A9%E5%BD%A2/"/>
     <id>/2021/09/11/P4537 [CQOI2007]矩形/</id>
     <published>2021-09-11T10:59:00.000Z</published>
-    <updated>2021-10-19T11:44:48.155Z</updated>
+    <updated>2021-10-22T13:08:54.195Z</updated>
     
     <summary type="html">
     
@@ -81,7 +101,7 @@
     <link href="/2021/08/28/CF1462E2%20Close%20Tuples%20(hard)/"/>
     <id>/2021/08/28/CF1462E2 Close Tuples (hard)/</id>
     <published>2021-08-28T02:08:00.000Z</published>
-    <updated>2021-10-19T11:44:19.756Z</updated>
+    <updated>2021-10-22T12:46:19.183Z</updated>
     
     <summary type="html">
     
@@ -121,7 +141,7 @@
     <link href="/1920/02/01/Die%20Verfassung/"/>
     <id>/1920/02/01/Die Verfassung/</id>
     <published>1920-01-31T16:00:00.000Z</published>
-    <updated>2021-10-19T11:44:27.926Z</updated>
+    <updated>2021-10-22T12:46:24.515Z</updated>
     
     <summary type="html">
     
@@ -141,7 +161,7 @@
     <link href="/1871/04/16/Verfassung%20des%20Deutschen%20Reiches/"/>
     <id>/1871/04/16/Verfassung des Deutschen Reiches/</id>
     <published>1871-04-15T15:55:00.000Z</published>
-    <updated>2021-10-19T11:44:57.980Z</updated>
+    <updated>2021-10-22T12:45:45.783Z</updated>
     
     <summary type="html">
     
