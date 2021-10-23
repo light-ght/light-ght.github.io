@@ -374,27 +374,49 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h3 id="C-系IO关闭流同步"><a href="#C-系IO关闭流同步" class="headerlink" title="C++系IO关闭流同步"></a>C++系IO关闭流同步</h3><pre><code class="c++">ios::sync_with_stdio(false);
+          <h5 id="本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"><a href="#本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。" class="headerlink" title="本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"></a>本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。</h5><h3 id="NOI系列考试、本地通用编译命令"><a href="#NOI系列考试、本地通用编译命令" class="headerlink" title="NOI系列考试、本地通用编译命令"></a>NOI系列考试、本地通用编译命令</h3><p><code>--std=c++14 -Dght -Wl,--stack=268435456</code></p>
+<p>本博客所有题解都建立在此基础上。</p>
+<h3 id="C-系IOの关闭流同步"><a href="#C-系IOの关闭流同步" class="headerlink" title="C++系IOの关闭流同步"></a>C++系IOの关闭流同步</h3><pre><code class="c++">ios::sync_with_stdio(false);
 cin.tie(0);
 </code></pre>
 <p>可以使<code>cin</code>，<code>cout</code>速率变得更快。</p>
-<h3 id="NOI系列考试、本地通用编译命令"><a href="#NOI系列考试、本地通用编译命令" class="headerlink" title="NOI系列考试、本地通用编译命令"></a>NOI系列考试、本地通用编译命令</h3><p><code>--std=c++14 -Dght -Wl,--stack=268435456</code></p>
-<p>本博客所有题解都建立在此基础上。</p>
+<h3 id="取模优化"><a href="#取模优化" class="headerlink" title="取模优化"></a>取模优化</h3><p>虽然看着不起眼，但优化效果很离谱。</p>
+<pre><code class="c++">inline int qmod(int x){return x-md*(x/md);}
+</code></pre>
+<p>或者</p>
+<pre><code class="c++">inline int qmod(int x){return x&gt;=md?x-md:x;}
+</code></pre>
+<h3 id="负数取模"><a href="#负数取模" class="headerlink" title="负数取模"></a>负数取模</h3><pre><code class="c++">inline int qmod(int x){return x&gt;=md?x-md:x;}
+inline int qmo(int y){return qmod(qmod(y)+md);}
+</code></pre>
 <h3 id="快速幂"><a href="#快速幂" class="headerlink" title="快速幂"></a>快速幂</h3><pre><code class="c++">#define md 1000000007
 int qpow(int a,int b){
     int ret=qpow(a,b&gt;&gt;1)%md;
     return (b&amp;1?a:1)*ret*ret%md;
 }
 </code></pre>
-<h3 id="逆元与费马小定理"><a href="#逆元与费马小定理" class="headerlink" title="逆元与费马小定理"></a>逆元与费马小定理</h3><p>假如a是一个整数，p是一个<strong>质数</strong>，那么</p>
-<p>a是p的倍数：$a^p\equiv a\ (\textrm{mod}\ p)$</p>
-<p>a不是是p的倍数：$a^{p-1}\equiv 1\ (\textrm{mod}\ p)$。</p>
-<p>快速幂狂解就完事了。</p>
+<h3 id="费马小定理与逆元"><a href="#费马小定理与逆元" class="headerlink" title="费马小定理与逆元"></a>费马小定理与逆元</h3><p>费马小定理：假如a是一个整数，p是一个<strong>质数</strong>，那么</p>
+<ul>
+<li><p>a是p的倍数：$a^p\equiv a\ (\textrm{mod}\ p)$</p>
+</li>
+<li><p>a不是是p的倍数：$a^{p-1}\equiv 1\ (\textrm{mod}\ p)$。</p>
+</li>
+</ul>
+<p>逆元：</p>
+<ul>
+<li><p>对于正整数 $a$， $p$，如果有$ax\equiv 1(\textrm{mod}\ p)$，那么 $x$ 的最小正整数解为 $a$ 模 $p$ 的逆元。</p>
+</li>
+<li><p>对于素数 $p$，则逆元 $x=a^{p-2}\textrm{mod}p$。</p>
+</li>
+<li><p><del>不重要的</del>证明：$a^{p-1}\equiv 1(\textrm{mod}\ p) \Rightarrow a^{p-2}\equiv \frac{1}{a}(\textrm{mod}\ p) $。</p>
+</li>
+</ul>
+<p>那么快速幂狂解就完事了。</p>
 <pre><code class="c++">int inv(int a){
     return qpow(a,md-2);
 }
 </code></pre>
-<h3 id="C-11丢进来的lambda"><a href="#C-11丢进来的lambda" class="headerlink" title="C++11丢进来的lambda"></a>C++11丢进来的lambda</h3><p>主要运用在结构体的memset中<del>装逼</del>。</p>
+<h3 id="自从便C-11丢进来的lambda"><a href="#自从便C-11丢进来的lambda" class="headerlink" title="自从便C++11丢进来的lambda"></a>自从便C++11丢进来的lambda</h3><p>主要运用在结构体的memset中<del>装X</del>。</p>
 <pre><code class="c++">sort(a+1,a+1+n,[](node x,node y){return x.s&gt;y.s;});//lambda就是后面这一串玩意。
 </code></pre>
 <p>正在更新···</p>
