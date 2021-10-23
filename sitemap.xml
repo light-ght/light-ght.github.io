@@ -114,13 +114,6 @@
   </url>
   
   <url>
-    <loc>/comment/index.html</loc>
-    
-    <lastmod>2020-03-15</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>/client/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
@@ -129,6 +122,13 @@
   
   <url>
     <loc>/lab/index.html</loc>
+    
+    <lastmod>2020-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/comment/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
