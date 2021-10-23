@@ -475,52 +475,56 @@ signed main(){
 <pre><code class="c++">__gnu_pbds::priority_queue&lt;...&gt;q;//括号内为适当的声明，与普通的优先队列没有区别
 </code></pre>
 <h3 id="完了？完了。"><a href="#完了？完了。" class="headerlink" title="完了？完了。"></a>完了？完了。</h3><ul>
-<li>上最终代码：</li>
+<li>上最终代码(顺便放上<code>Spfa</code>写法）：</li>
 </ul>
-<pre><code class="c++">#include&lt;bits/stdc++.h&gt;
+<pre><code class="c++">#include &lt;bits/stdc++.h&gt;
+#include &lt;ext/pb_ds/assoc_container.hpp&gt;
+#include &lt;ext/pb_ds/priority_queue.hpp&gt;
 using namespace std;
-#include&lt;ext/pb_ds/assoc.container.hpp&gt;
-#include&lt;ext/pb_ds/priority_queue.hpp&gt;
 
 #ifndef ght
 #define getchar()(p1==p2&amp;&amp;(p2=(p1=buf)+fread(buf,1,1&lt;&lt;21,stdin),p1==p2)?EOF:*p1++)
 char buf[1&lt;&lt;21],*p1=buf,*p2=buf;
 #endif
 
-template&lt;typename T&gt;inline void read(T&amp; ret) {
+template&lt;typename T&gt;inline void read(T &amp;ret){
     ret=0;T f=1;char ch=getchar();
-    while (ch&lt;&#39;0&#39;||ch&gt;&#39;9&#39;) {if (ch==&#39;-&#39;) f=-f;ch=getchar();}
-    while (ch&gt;=&#39;0&#39;&amp;&amp;ch&lt;=&#39;9&#39;) ret=ret*10+ch-&#39;0&#39;,ch=getchar();
+    while(ch&lt;&#39;0&#39;||ch&gt;&#39;9&#39;){
+        if(ch==&#39;-&#39;)f=-1;ch=getchar();
+    }
+    while(ch&gt;=&#39;0&#39;&amp;&amp;ch&lt;=&#39;9&#39;)ret=ret*10+ch-&#39;0&#39;,ch=getchar();
     ret*=f;
 }
-template &lt;typename T,typename... Args&gt; inline void read(T&amp; t, Args&amp;... args){
+template &lt;typename T,typename... Args&gt; inline void read(T&amp;t,Args&amp;... args){
     read(t);read(args...);
 }
+
 #define N 1000001
 
-int n,m,s,t;
-int dist[N],cnt,nxt[N],edge[N],to[N],head[N];
-bool vis[N];
-
-__gnu_pbds::priority_queue&lt;pair&lt;int,int&gt;&gt;q;
-
-void add(int u,int v,int w){
-    edge[++cnt]=w;
-    to[cnt]= v;
-    nxt[cnt]=head[u];
-    head[u]=cnt;
+int n,m,s,t,a,b,v;
+int hed[N],nxt[N],to[N],edge[N],cnt;
+void add(int u,int v,int k){
+    edge[++cnt]=k;
+    to[cnt]=v;
+    nxt[cnt]=hed[u];
+    hed[u]=cnt;
     return ;
 }
 
+
+int dist[N];
+bool vis[N];
+
 void dij(){
+    __gnu_pbds::priority_queue&lt;pair&lt;int,int&gt;&gt;q;
     memset(dist,0x3f,sizeof dist);
     dist[s]=0;
     q.push(make_pair(0,s));
-    while(q.size()){
-        int x=q.top().second;q.pop();
+    while(!q.empty()){
+        int x=q.top().second;
+        q.pop();
         if(vis[x])continue ;
-        vis[x]=1;
-        for(int i=head[x];i;i=nxt[i]){
+        for(int i=hed[x];i;i=nxt[i]){
             int y=to[i],z=edge[i];
             if(dist[y]&gt;dist[x]+z){
                 dist[y]=dist[x]+z;
@@ -529,20 +533,40 @@ void dij(){
         }
     }
 }
-int a,b,v; 
-signed main(){
-    ios::sync_with_stdio(0);
-    read(n,m,s,t);  
+
+void spfa(){
+    queue&lt;int&gt;q;
+    memset(dist,0x3f,sizeof dist);
+    q.push(s);
+    vis[s]=1;
+    dist[s]=0;
+    while(!q.empty()){
+        int u=q.front();q.pop();
+        vis[u]=0;
+        for(int i=hed[u];i;i=nxt[i]){
+            int v=to[i];
+            if(dist[v]&gt;dist[u]+edge[i]){
+                dist[v]=dist[u]+edge[i];
+                if(!vis[v])q.push(v),vis[v]=1;
+            }
+        }
+    }
+}
+
+signed main(){ios::sync_with_stdio(0);
+    read(n,m,s,t);
     for(int i=1;i&lt;=m;i++){
         read(a,b,v);
         add(a,b,v);
     }
-    dij();
-    cout&lt;&lt;dist[t];
+    spfa();
+    cout&lt;&lt;dist[t]&lt;&lt;endl;
+    return 0;
 }
+
 </code></pre>
 <ul>
-<li><p>可以看出来几乎没有区别。这就是 pb_ds 的一大优点。<del>不需要像__int128之类的卡常那么麻烦</del></p>
+<li><p>可以看出来 $Dijkstra$ 部分几乎没有区别。这就是 pb_ds 的一大优点。<del>不需要像__int128之类的卡常那么麻烦</del></p>
 </li>
 <li><p>当然，pb_ds 还有非常之多的功能。不过就先记到这里吧。</p>
 </li>
