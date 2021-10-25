@@ -344,7 +344,7 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/light-ght/CDN@10.0.7/genshin/1.jpeg);" src="https://cdn.jsdelivr.net/gh/honjun/CDN@10.1.1/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.0.7/genshin/1.jpeg">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.1/genshin/1.jpeg);" src="https://cdn.jsdelivr.net/gh/honjun/CDN@10.1.1/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.1/genshin/1.jpeg">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
@@ -352,7 +352,7 @@
       <p class="entry-census">
         <span>
           <a href="">
-            <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.0.7/pics1/avatar.png">
+            <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.1/pics1/avatar.png">
           </a>
         </span>
         <span>
@@ -374,7 +374,23 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          
+          <h3 id="小引"><a href="#小引" class="headerlink" title="小引"></a>小引</h3><p>笑看天地浮华，悲叹苍生颓垮。旷日劫后且苟生，却闻九州哀鸿鸣。</p>
+<p>作为蒟蒻的最后一届竞赛考试，顺利通过SN组的笔试后已经做好了充足的准备与最坏的打算。在初赛到复赛的这几十天里，从<code>DFS</code>，到树状数组，再到树上<code>DP</code>，我把曾经学过的知识基本过了一个遍。尤其是树上问题，是我的薄弱点，亦是复习的重点。</p>
+<p>谁曾想，这次的得分点会是一道暴力的模拟+一道找规律的模拟。</p>
+<h3 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h3><p>读完T1之后信心爆棚：这不是有手就行！随便跑一下优先队列，加上开了O2，再一通奇技淫巧就应该过了。但是手贱了一秒钟，把 $\Theta(NlogN)$的代码硬是打成了$\Theta(N^2logN)$（本来是并列复杂度，我把他们乘到一起去了）。不过凭借奇怪的卡常，分数高过普通的暴力。</p>
+<p>赛后看着别人 $100+$ 的成绩，内心还是有些不甘的。尤其是看到思路完全一致，但是没打错的代码，就有扇自己耳光的冲动。</p>
+<p><strong>不过我堂堂jdfz心态第一好，怎么会被这种破事干扰心情！</strong></p>
+<p>有人（我）说得好：复赛？是个屁！</p>
+<h3 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h3><p>T2着实是超出蒟蒻能力的一道题。考场上，十分钟就打出了第一版的暴力代码，然后想了两个小时的check方式硬是打不出来。最后也没有能够打出哪怕部分分，随手改了两下便交上去了。不指望拿分。</p>
+<p>赛后看到正解是区间DP，试着推了推转移方程，没有头绪。罢了。不如归去，不如归去······</p>
+<h3 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h3><p>整个考试中最有教训警示意义的一道题。其实这个题的正解是找规律，但最坏复杂度 $\Theta(N^3)$ 的<code>DFS</code>还是很好打的。虽然函数内部有些复杂的地方，但不妨碍我一个小时解决暴力打法（当然还是很慢的）。起码样例能过。</p>
+<p>但是！</p>
+<p>为什么我说它有教训警示意义呢？因为我并没有拿上这暴力分。</p>
+<p>究其原因。考试的时候不习惯用丑陋的Dev-C++，这道题是在Sublime Text上写的。但是，我犯了一点致命的错误：其实我在Dev上的代码才是存到考试代码库里的，ST里的代码只是扔在桌面上了。写完暴力之后我就开始试图肝出T2部分分，直到考试前也没有检查过代码。考试结束前十分钟，我突然（自以为）灵光乍现开始码T2的check，看了眼时间，便打开文件夹看了看四道题的代码文件夹都有东西便不管了。</p>
+<p>于是，便发生了惨剧。</p>
+<h3 id="T4？没这道题吧"><a href="#T4？没这道题吧" class="headerlink" title="T4？没这道题吧"></a>T4？<del>没这道题吧</del></h3><h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>可见，此次考试完全没有拿到应有的125+（大约吧）。当然，蒟蒻的实力相比192+的大佬<a href="https://www.luogu.com.cn/blog/forforever/" target="_blank" rel="noopener">鲸鱼</a>和150+的<a href="https://drway.ml" target="_blank" rel="noopener">DrWay</a>还是差的很远，在这里$\%$一下两位准蓝勾大佬。</p>
+<p>还有什么想说的？大约似乎的确是没有了罢。今为薄文一篇，谨记今时所感所获，以为来日之鉴，亦作他日相勉。</p>
+
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -455,7 +471,7 @@
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.0.7/pics1/avatar.png" itemprop="image" alt="" height="70" width="70"></a>
+          <a href="" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.1/pics1/avatar.png" itemprop="image" alt="" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">

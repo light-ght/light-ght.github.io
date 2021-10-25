@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/2021/10/22/chaos/</loc>
+    <loc>/2021/10/24/csps2021/</loc>
     
     <lastmod>2021-10-25</lastmod>
     
@@ -10,6 +10,13 @@
   
   <url>
     <loc>/2021/10/22/pb-ds/</loc>
+    
+    <lastmod>2021-10-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/2021/10/22/chaos/</loc>
     
     <lastmod>2021-10-25</lastmod>
     
@@ -65,13 +72,6 @@
   </url>
   
   <url>
-    <loc>/2021/10/24/csps2021/</loc>
-    
-    <lastmod>2021-10-25</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>/2021/08/20/hello-world/</loc>
     
     <lastmod>2021-10-18</lastmod>
@@ -114,14 +114,14 @@
   </url>
   
   <url>
-    <loc>/client/index.html</loc>
+    <loc>/bangumi/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>/bangumi/index.html</loc>
+    <loc>/client/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     

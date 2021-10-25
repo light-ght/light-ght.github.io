@@ -389,12 +389,8 @@
 <p>接下来 $m$ 行每行三个整数 $a,\ b,\ v$ 表示有一条边 $a$ 到 $b$，边权是$v$。</p>
 <p><strong>【输出格式】</strong></p>
 <p>一个整数，表示最短路长度。</p>
-<ul>
-<li><p>题目里说的很清楚了：二叉堆优化的 $Dijkstra$。干就完了！</p>
-</li>
-<li><p>光速打码。</p>
-</li>
-</ul>
+<p>题目里说的很清楚了：二叉堆优化的 $Dijkstra$。干就完了！</p>
+<p>光速打码。</p>
 <pre><code class="c++">#include&lt;bits/stdc++.h&gt;
 using namespace std;
 
@@ -539,7 +535,7 @@ void dij(){
     }
 }
 
-void spfa(){
+void spfa(){    //关于Spfa：他死了
     queue&lt;int&gt;q;
     memset(dist,0x3f,sizeof dist);
     q.push(s);
@@ -609,7 +605,7 @@ signed main(){ios::sync_with_stdio(0);
           
             <a href="/2021/10/24/csps2021/" rel="prev">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/CDN@10.1.1/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.0.7/genshin/1.jpeg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.0.7/genshin/1.jpeg">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/CDN@10.1.1/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.1/genshin/1.jpeg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.1/genshin/1.jpeg">
               </div>
               <span class="label">
               Previous Post</span>
