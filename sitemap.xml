@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/2021/10/22/chaos/</loc>
+    <loc>/1926/08/17/LaTex-test/</loc>
     
     <lastmod>2021-10-28</lastmod>
     
@@ -11,7 +11,14 @@
   <url>
     <loc>/tips/index.html</loc>
     
-    <lastmod>2021-10-26</lastmod>
+    <lastmod>2021-10-28</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/2021/10/22/chaos/</loc>
+    
+    <lastmod>2021-10-28</lastmod>
     
   </url>
   
@@ -121,13 +128,6 @@
   </url>
   
   <url>
-    <loc>/client/index.html</loc>
-    
-    <lastmod>2020-03-15</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>/bangumi/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
@@ -135,7 +135,21 @@
   </url>
   
   <url>
+    <loc>/client/index.html</loc>
+    
+    <lastmod>2020-03-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>/comment/index.html</loc>
+    
+    <lastmod>2020-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/rss/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -150,13 +164,6 @@
   
   <url>
     <loc>/tags/index.html</loc>
-    
-    <lastmod>2020-03-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/rss/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -188,14 +195,14 @@
 
   
   <url>
-    <loc>/categories/%E9%A2%98%E8%A7%A3/</loc>
+    <loc>/categories/%E5%8F%B2%E6%94%BF/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/categories/%E5%8F%B2%E6%94%BF/</loc>
+    <loc>/categories/%E9%A2%98%E8%A7%A3/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
