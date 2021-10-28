@@ -384,7 +384,7 @@
           <h5 id="本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"><a href="#本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。" class="headerlink" title="本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"></a>本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。</h5><h3 id="NOI系列考试、本地通用编译命令"><a href="#NOI系列考试、本地通用编译命令" class="headerlink" title="NOI系列考试、本地通用编译命令"></a>NOI系列考试、本地通用编译命令</h3><pre><code class="text">--std=c++14 -Wl,--stack=268435456 -Dght -Wall -lm
 </code></pre>
 <p>本博客所有题解都建立在此基础上。</p>
-<h3 id="C-系IOの关闭流同步"><a href="#C-系IOの关闭流同步" class="headerlink" title="C++系IOの关闭流同步"></a>C++系IOの关闭流同步</h3><pre><code class="c++">ios::sync_with_stdio(false);
+<h3 id="C-系IOの关闭流同步"><a href="#C-系IOの关闭流同步" class="headerlink" title="C++系IOの关闭流同步"></a>C++系IOの关闭流同步</h3><pre><code class="c++">ios::sync_with_stdio(0);
 cin.tie(0);
 </code></pre>
 <p>可以使<code>cin</code>，<code>cout</code>速率变得更快。</p>
@@ -403,7 +403,7 @@ int qpow(int a,int b){
     return (b&amp;1?a:1)*ret*ret%md;
 }
 </code></pre>
-<h3 id="费马小定理与逆元"><a href="#费马小定理与逆元" class="headerlink" title="费马小定理与逆元"></a>费马小定理与逆元</h3><p>费马小定理：假如a是一个整数，p是一个<strong>质数</strong>，那么</p>
+<h3 id="费马小定理与逆元"><a href="#费马小定理与逆元" class="headerlink" title="费马小定理与逆元"></a>费马小定理与逆元</h3><p>费马小定理：假如 $a$ 是一个整数，$p$ 是一个<strong>质数</strong>，那么</p>
 <ul>
 <li><p>a是p的倍数：$a^p\equiv a\ (\textrm{mod}\ p)$</p>
 </li>
@@ -424,9 +424,31 @@ int qpow(int a,int b){
     return qpow(a,md-2);
 }
 </code></pre>
-<h3 id="自从C-11便丢进来的lambda"><a href="#自从C-11便丢进来的lambda" class="headerlink" title="自从C++11便丢进来的lambda"></a>自从C++11便丢进来的lambda</h3><p>主要运用在结构体的memset中<del>装X</del>。</p>
+<h3 id="自从C-11被丢进来的lambda"><a href="#自从C-11被丢进来的lambda" class="headerlink" title="自从C++11被丢进来的lambda"></a>自从C++11被丢进来的lambda</h3><p>主要运用在结构体的memset中<del>装X</del>。</p>
 <pre><code class="c++">sort(a+1,a+1+n,[](node x,node y){return x.s&gt;y.s;});//lambda就是后面这一串玩意。
 </code></pre>
+<h3 id="手写lowbit函数"><a href="#手写lowbit函数" class="headerlink" title="手写lowbit函数"></a>手写lowbit函数</h3><p>找一个数二进制下最低是 $1$ 的位。</p>
+<p>比某臭名昭著的库里的函数快了亿点点。</p>
+<pre><code class="c++">inline int lowbit(int n){return n&amp;(-n);}
+</code></pre>
+<h3 id="当在评测机上想搞一些奇怪的东西时"><a href="#当在评测机上想搞一些奇怪的东西时" class="headerlink" title="当在评测机上想搞一些奇怪的东西时"></a>当在评测机上想搞一些奇怪的东西时</h3><p>我们先前提到的编译命令里有：<code>-Dght</code>这一条。</p>
+<p>于是我们可以这样：</p>
+<pre><code class="c++">#ifndef ght
+//Anything to code
+#endif
+</code></pre>
+<p>这样，本地就不会运行这段代码，而评测机肯定不会搞这么一个奇怪的编译命令，所以会在其中运行。</p>
+<p>我在<a href="https://reich-iv.cf/2041/09/11/fread/" target="_blank" rel="noopener">加速评测机的输入输出</a>一文所引用的<code>fread</code>快读就利用了这个原理，摘抄如下：</p>
+<pre><code class="c++">#ifdef ONLINE_JUDGE
+#define getchar()(in_p1==in_p2&amp;&amp;(in_p2=(in_p1=in_buf)+fread(in_buf,1,bufSIZE,stdin),in_p1==in_p2)?EOF:*in_p1++)
+char in_buf[bufSIZE],*in_p1=in_buf,*in_p2=in_buf;
+#endif
+
+</code></pre>
+<p>当然，这段代码的第一行最好还是改成：</p>
+<pre><code class="c++">#ifndef ght
+</code></pre>
+<p>尤其是在竞赛或民间评测机评测时。蒟蒻已经在€€£的考试中试过了，亲试可行。</p>
 <p>正在更新···</p>
 
         </div>
