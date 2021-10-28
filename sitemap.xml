@@ -121,13 +121,6 @@
   </url>
   
   <url>
-    <loc>/client/index.html</loc>
-    
-    <lastmod>2020-03-15</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>/bangumi/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
@@ -142,14 +135,14 @@
   </url>
   
   <url>
-    <loc>/lab/index.html</loc>
+    <loc>/client/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>/rss/index.html</loc>
+    <loc>/lab/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -164,6 +157,13 @@
   
   <url>
     <loc>/video/index.html</loc>
+    
+    <lastmod>2020-03-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>/rss/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -195,7 +195,7 @@
   </url>
   
   <url>
-    <loc>/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>/categories/%E5%8F%B2%E6%94%BF/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -209,7 +209,7 @@
   </url>
   
   <url>
-    <loc>/categories/%E5%8F%B2%E6%94%BF/</loc>
+    <loc>/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2021-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
