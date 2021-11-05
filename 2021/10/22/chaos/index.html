@@ -35,7 +35,7 @@
   mashiro_option.qzone_autocomplete = false;
   mashiro_option.site_name = "light-ght’s泯落の帝国";
   mashiro_option.author_name = "泯落の帝国";
-  mashiro_option.site_url = "https://reich-iv.cf";
+  mashiro_option.site_url = "https://reich-iv.xyz";
   mashiro_option.v_appId = "HujbvJPMpLmtlEsiXTrrhMkY-MdYXbMMI";
   mashiro_option.v_appKey = "ctiW96pu998MLFLi7HXe0r1G";
   mashiro_option.mathjax = "true";
@@ -79,7 +79,7 @@
   <figure id="centerbg" class="centerbg">
     <div class="focusinfo no-select">
       <div class="header-tou">
-        <a href="https://reich-iv.cf">
+        <a href="https://reich-iv.xyz">
           <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.1/pics1/avatar.png">
         </a>
       </div>
@@ -381,14 +381,14 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h5 id="本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"><a href="#本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。" class="headerlink" title="本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"></a>本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。</h5><h3 id="NOI系列考试、本地通用编译命令"><a href="#NOI系列考试、本地通用编译命令" class="headerlink" title="NOI系列考试、本地通用编译命令"></a>NOI系列考试、本地通用编译命令</h3><pre><code class="Text">--std=c++14 -Wl,--stack=268435456 -Dght -Wall -lm
+          <h5 id="本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"><a href="#本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。" class="headerlink" title="本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"></a>本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。</h5><h3 id="NOI系列考试、本地通用编译命令"><a href="#NOI系列考试、本地通用编译命令" class="headerlink" title="NOI系列考试、本地通用编译命令"></a>NOI系列考试、本地通用编译命令</h3><pre><code class="orders">--std=c++14 -Wl,--stack=268435456 -Dght -Wall -lm
 </code></pre>
 <p>本博客所有题解都建立在此基础上。</p>
 <h3 id="C-系IOの关闭流同步"><a href="#C-系IOの关闭流同步" class="headerlink" title="C++系IOの关闭流同步"></a>C++系IOの关闭流同步</h3><pre><code class="c++">ios::sync_with_stdio(0);
 cin.tie(0);
 </code></pre>
 <p>可以使<code>cin</code>，<code>cout</code>速率变得更快。</p>
-<h3 id="取模优化"><a href="#取模优化" class="headerlink" title="取模优化"></a>取模优化</h3><p>虽然看着不起眼，但优化效果很离谱。</p>
+<h3 id="取模优化"><a href="#取模优化" class="headerlink" title="取模优化"></a>取模优化</h3><p>虽然看着不起眼，但优化效果很离谱。尤其对是快速幂取模这种取模运算量极大的函数。</p>
 <pre><code class="c++">inline int qmod(int x){return x-md*(x/md);}
 </code></pre>
 <p>或者</p>
@@ -437,6 +437,12 @@ int qpow(int a,int b){
 //Anything to code
 #endif
 </code></pre>
+<p>或者这样：</p>
+<pre><code class="c++">#ifndef fuck_ccf
+//禁赛三年警告
+#endif
+</code></pre>
+<p>并加上<code>-Dfuck_ccf</code>。</p>
 <p>这样，本地就不会运行这段代码，而评测机肯定不会搞这么一个奇怪的编译命令，所以会在其中运行。</p>
 <p>我在<a href="https://reich-iv.cf/2041/09/11/fread/" target="_blank" rel="noopener">加速评测机的输入输出</a>一文所引用的<code>fread</code>快读就利用了这个原理，摘抄如下：</p>
 <pre><code class="c++">#ifdef ONLINE_JUDGE
@@ -449,6 +455,10 @@ char in_buf[bufSIZE],*in_p1=in_buf,*in_p2=in_buf;
 <pre><code class="c++">#ifndef ght
 </code></pre>
 <p>尤其是在竞赛或民间评测机评测时。蒟蒻已经在€€£的考试中试过了，亲试可行。</p>
+<h3 id="int128"><a href="#int128" class="headerlink" title="int128"></a>int128</h3><p>如它的名字，这是一个数字存储大小甚至是<code>long long int</code>两倍的声明。</p>
+<p>不过代价则是，他牺牲了空间和敲代码的时间。空间为32B，也就是<code>int</code>的4倍，对于一个 Memory Limit 256MB 的题来说很不友好，开个 $5^6$ 就可能炸掉爆〇。况且，所有传统的io都无法输入输出一个__int128声明类型的数，必须打出一份类似快读快写的代码才能做到。</p>
+<p>最关键的则是，使用这个又臭又长的东西，几乎完全不能避免该有的高精度问题。<del>你想想，毒瘤出题人会不把他拿捏得死死的？</del></p>
+<p>但我要<strong>AFO</strong>了。无所畏惧。</p>
 <p>正在更新···</p>
 
         </div>
@@ -481,7 +491,7 @@ char in_buf[bufSIZE],*in_p1=in_buf,*in_p2=in_buf;
           
             <div class="post-nepre half previous">
           
-            <a href="/2021/10/22/pb-ds/" rel="prev">
+            <a href="/2021/10/22/pbds-pq/" rel="prev">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/CDN@10.1.1/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.1/code/7.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.1/code/7.jpg">
               </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2021-10-25T11:35:48.466Z</updated>
+  <updated>2021-10-25T11:35:50.000Z</updated>
   <id>/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="/2041/09/11/fread/"/>
     <id>/2041/09/11/fread/</id>
     <published>2041-09-11T10:59:00.000Z</published>
-    <updated>2021-10-25T11:35:48.466Z</updated>
+    <updated>2021-10-25T11:35:50.000Z</updated>
     
     <summary type="html">
     
@@ -41,7 +41,7 @@
     <link href="/2022/10/08/sikao/"/>
     <id>/2022/10/08/sikao/</id>
     <published>2022-10-08T13:42:00.000Z</published>
-    <updated>2021-10-25T11:36:17.199Z</updated>
+    <updated>2021-11-04T10:15:30.000Z</updated>
     
     <summary type="html">
     
@@ -61,7 +61,7 @@
     <link href="/2021/10/24/csps2021/"/>
     <id>/2021/10/24/csps2021/</id>
     <published>2021-10-23T23:09:00.000Z</published>
-    <updated>2021-10-26T12:44:11.115Z</updated>
+    <updated>2021-10-26T12:44:12.000Z</updated>
     
     <summary type="html">
     
@@ -78,10 +78,10 @@
   
   <entry>
     <title>pb_ds（平板电视）优先队列</title>
-    <link href="/2021/10/22/pb-ds/"/>
-    <id>/2021/10/22/pb-ds/</id>
+    <link href="/2021/10/22/pbds-pq/"/>
+    <id>/2021/10/22/pbds-pq/</id>
     <published>2021-10-22T12:59:00.000Z</published>
-    <updated>2021-10-25T13:00:49.204Z</updated>
+    <updated>2021-10-25T13:00:50.000Z</updated>
     
     <summary type="html">
     
@@ -101,7 +101,7 @@
     <link href="/2021/10/22/chaos/"/>
     <id>/2021/10/22/chaos/</id>
     <published>2021-10-22T10:09:00.000Z</published>
-    <updated>2021-10-28T12:50:27.087Z</updated>
+    <updated>2021-11-05T11:16:26.000Z</updated>
     
     <summary type="html">
     
@@ -121,7 +121,7 @@
     <link href="/2021/09/11/P4537%20%5BCQOI2007%5D%E7%9F%A9%E5%BD%A2/"/>
     <id>/2021/09/11/P4537 [CQOI2007]矩形/</id>
     <published>2021-09-11T10:59:00.000Z</published>
-    <updated>2021-10-25T11:36:09.379Z</updated>
+    <updated>2021-10-25T11:36:10.000Z</updated>
     
     <summary type="html">
     
@@ -141,7 +141,7 @@
     <link href="/2021/08/28/CF1462E2%20Close%20Tuples%20(hard)/"/>
     <id>/2021/08/28/CF1462E2 Close Tuples (hard)/</id>
     <published>2021-08-28T02:08:00.000Z</published>
-    <updated>2021-10-25T11:26:01.002Z</updated>
+    <updated>2021-10-25T11:26:02.000Z</updated>
     
     <summary type="html">
     
@@ -161,7 +161,7 @@
     <link href="/2021/08/20/hello-world/"/>
     <id>/2021/08/20/hello-world/</id>
     <published>2021-08-20T01:20:01.000Z</published>
-    <updated>2021-10-18T14:20:39.523Z</updated>
+    <updated>2021-10-18T14:20:40.000Z</updated>
     
     <summary type="html">
     
@@ -177,31 +177,11 @@
   </entry>
   
   <entry>
-    <title>LaTex测试</title>
-    <link href="/1926/08/17/LaTex-test/"/>
-    <id>/1926/08/17/LaTex-test/</id>
-    <published>1926-08-17T10:09:00.000Z</published>
-    <updated>2021-10-28T15:06:27.863Z</updated>
-    
-    <summary type="html">
-    
-      rt
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Die Verfassung</title>
     <link href="/1920/02/01/Die%20Verfassung/"/>
     <id>/1920/02/01/Die Verfassung/</id>
     <published>1920-01-31T16:00:00.000Z</published>
-    <updated>2021-10-25T11:35:41.755Z</updated>
+    <updated>2021-10-25T11:35:42.000Z</updated>
     
     <summary type="html">
     
@@ -221,7 +201,7 @@
     <link href="/1871/04/16/Verfassung%20des%20Deutschen%20Reiches/"/>
     <id>/1871/04/16/Verfassung des Deutschen Reiches/</id>
     <published>1871-04-15T15:55:00.000Z</published>
-    <updated>2021-10-25T11:36:03.004Z</updated>
+    <updated>2021-10-25T11:36:04.000Z</updated>
     
     <summary type="html">
     
@@ -230,6 +210,26 @@
     </summary>
     
       <category term="史政" scheme="/categories/%E5%8F%B2%E6%94%BF/"/>
+    
+    
+      <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LaTex测试</title>
+    <link href="/1454/07/22/LaTex-test/"/>
+    <id>/1454/07/22/LaTex-test/</id>
+    <published>1454-07-22T10:04:00.000Z</published>
+    <updated>2021-11-05T11:07:10.000Z</updated>
+    
+    <summary type="html">
+    
+      对于mathjax功能进行测试
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
