@@ -428,9 +428,25 @@ char in_buf[bufSIZE],*in_p1=in_buf,*in_p2=in_buf;
 </code></pre>
 <p>尤其是在竞赛或民间评测机评测时。蒟蒻已经在€€£的考试中试过了，亲试可行。</p>
 <h3 id="int128"><a href="#int128" class="headerlink" title="int128"></a>int128</h3><p>如它的名字，这是一个数字存储大小甚至是<code>long long int</code>两倍的声明。</p>
-<p>不过代价则是，他牺牲了空间和敲代码的时间。空间为32B，也就是<code>int</code>的4倍，对于一个 Memory Limit 256MB 的题来说很不友好，开个 $5^6$ 就可能炸掉爆〇。况且，所有传统的io都无法输入输出一个__int128声明类型的数，必须打出一份类似快读快写的代码才能做到。</p>
+<p>不过代价则是，他牺牲了空间和敲代码的时间。空间为16B，也就是<code>int</code>的4倍，对于一个 Memory Limit 256MB 的题来说很不友好，开个 $10^7$ 就可能炸掉爆〇。况且，所有传统的io都无法输入输出一个__int128声明类型的数，必须打出一份类似快读快写的代码才能做到。</p>
 <p>最关键的则是，使用这个又臭又长的东西，几乎完全不能避免该有的高精度问题。<del>你想想，毒瘤出题人会不把他拿捏得死死的？</del></p>
 <p>但我要<strong>AFO</strong>了。无所畏惧。</p>
+<p>GCC提供了两种128位整数类型，分别是<code>__int128_t</code>和<code>__uint128_t</code>，分别用于声明有符号整数变量和无符号整数变量。</p>
+<p>当然，你也可以直接上<code>__int128</code>。</p>
+<p>首先我们不妨试下，传统意义上挺万能的C++系io会把他们输出成啥玩意。</p>
+<pre><code class="c++">    __int128_t a;
+    cin&gt;&gt;a;
+    cout&lt;&lt;a;
+</code></pre>
+<pre><code class="Error">[Error] no match for &#39;operator&gt;&gt;&#39; (operand types are &#39;std::istream&#39; {aka &#39;std::basic_istream&lt;char&gt;&#39;} and &#39;__int128&#39;)
+</code></pre>
+<p>行吧，果然没用。那么我们来写一份<a href="https://reich-iv.xyz/2041/09/11/fread/" target="_blank" rel="noopener">快读快写</a>。</p>
+<pre><code class="c++">    __int128 a;
+    redi(a);
+    wrti(a);
+</code></pre>
+<p>Wow, it works well!</p>
+<p>当然，考试的话写这么一大串的快读快写是<strong>不现实的</strong>。这里还有一份<a href="https://www.luogu.com.cn/paste/qb587r4r" target="_blank" rel="noopener">简单版</a>。实测正负都可以哦。</p>
 <p>正在更新···</p>
 
         </div>

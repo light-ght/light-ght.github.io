@@ -353,7 +353,7 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <p>版权声明</p>
+          <p>引用声明</p>
 <ul>
 <li><p>来自某<a href="https://drway.ml" target="_blank" rel="noopener"><strong>魏姓OIer</strong></a> 的开源项目<del>（啊我的魏先生）</del></p>
 </li>
@@ -446,14 +446,10 @@ template&lt;typename T&gt;inline void wrti(T x){
 <ul>
 <li>输出最后加上flush();</li>
 </ul>
-<h3 id="附：简易版字符串快读"><a href="#附：简易版字符串快读" class="headerlink" title="附：简易版字符串快读"></a>附：简易版字符串快读</h3><pre><code class="c++">inline string red(){
-    char ch=getchar();
-    string st1=&quot;&quot;;
-    while (!((ch&gt;=&#39;A&#39;)&amp;&amp;(ch&lt;=&#39;z&#39;)))
-      ch=getchar();
-    while ((ch&gt;=&#39;A&#39;)&amp;&amp;(ch&lt;=&#39;z&#39;)) 
-      st1+=ch,ch=getchar();
-    return st1;
+<h3 id="附：简易版字符串快读（这个非引用）"><a href="#附：简易版字符串快读（这个非引用）" class="headerlink" title="附：简易版字符串快读（这个非引用）"></a>附：简易版字符串快读（这个非引用）</h3><pre><code class="c++">inline void red(string &amp;ret){
+    char ch=getchar();ret=&quot;&quot;;
+    while (!(ch&gt;=&#39;A&#39;&amp;&amp;ch&lt;=&#39;z&#39;)&amp;&amp;!(ch&gt;=&#39;0&#39;&amp;&amp;ch&lt;=&#39;9&#39;)) ch=getchar();
+    while ((ch&gt;=&#39;A&#39;&amp;&amp;ch&lt;=&#39;z&#39;)||(ch&gt;=&#39;0&#39;&amp;&amp;ch&lt;=&#39;9&#39;)) ret+=ch,ch=getchar();
 }
 </code></pre>
 
