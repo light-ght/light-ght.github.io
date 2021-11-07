@@ -201,7 +201,7 @@
     <link href="/1920/02/01/Die%20Verfassung/"/>
     <id>/1920/02/01/Die Verfassung/</id>
     <published>1920-01-31T16:00:00.000Z</published>
-    <updated>2021-11-07T08:59:21.797Z</updated>
+    <updated>2021-11-07T10:03:16.398Z</updated>
     
     <summary type="html">
     
@@ -230,26 +230,6 @@
     </summary>
     
       <category term="史政" scheme="/categories/%E5%8F%B2%E6%94%BF/"/>
-    
-    
-      <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LaTex测试</title>
-    <link href="/1454/07/22/LaTex-test/"/>
-    <id>/1454/07/22/LaTex-test/</id>
-    <published>1454-07-22T10:04:00.000Z</published>
-    <updated>2021-11-07T09:06:43.951Z</updated>
-    
-    <summary type="html">
-    
-      对于mathjax功能进行测试
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>

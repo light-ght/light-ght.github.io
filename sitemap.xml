@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/1454/07/22/LaTex-test/</loc>
+    <loc>/1920/02/01/Die%20Verfassung/</loc>
     
     <lastmod>2021-11-07</lastmod>
     
@@ -31,13 +31,6 @@
   
   <url>
     <loc>/blog/index.html</loc>
-    
-    <lastmod>2021-11-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>/1920/02/01/Die%20Verfassung/</loc>
     
     <lastmod>2021-11-07</lastmod>
     
@@ -209,14 +202,14 @@
   </url>
   
   <url>
-    <loc>/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>/categories/%E5%8F%B2%E6%94%BF/</loc>
     <lastmod>2021-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>/categories/%E5%8F%B2%E6%94%BF/</loc>
+    <loc>/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2021-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
