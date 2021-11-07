@@ -323,7 +323,7 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.0/code/4.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/CDN@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.0/code/4.jpg">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.2/code/4.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/CDN@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.2/code/4.jpg">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
@@ -331,7 +331,7 @@
       <p class="entry-census">
         <span>
           <a href="">
-            <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.0/pics1/avatar.png">
+            <img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.2/pics1/avatar.png">
           </a>
         </span>
         <span>
@@ -355,7 +355,7 @@
         <div class="entry-content">
           <h5 id="本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"><a href="#本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。" class="headerlink" title="本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"></a>本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。</h5><h1 id="CF1462E2-Close-Tuples-hard"><a href="#CF1462E2-Close-Tuples-hard" class="headerlink" title="CF1462E2 Close Tuples (hard)"></a>CF1462E2 Close Tuples (hard)</h1><p>先来一句废话：<a href="https://www.luogu.com.cn/problem/CF1462E2" target="_blank" rel="noopener">这题</a>的翻译是我写的欸！！</p>
 <p><strong>本文同步于<a href="https://www.luogu.com.cn/blog/Rstar-PanzerTigerII/cf1462e2-close-tuples-hard-version-ti-xie" target="_blank" rel="noopener">蒟蒻的洛谷博客</a></strong></p>
-<h2 id="组合数"><a href="#组合数" class="headerlink" title="组合数"></a>组合数</h2><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>首先<del>恶心人的</del>是这是道纯英文的题的<strong>题意</strong>。借助一些奇怪的手段（指盲猜），我们可以明白这题面的意思是</p>
+<h2 id="还是组合数"><a href="#还是组合数" class="headerlink" title="还是组合数"></a>还是组合数</h2><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>首先<del>恶心人的</del>是这是道纯英文的题的<strong>题意</strong>（你没看错，还是这句话）。借助一些奇怪的手段（指盲猜），我们可以明白这题面的意思是</p>
 <p>给定 $t$ 个长为 $n$ 的数组 $a$，取元素个数为 $m$ 的数组 ${b}\in a$ 满足其中元素各不相同，使得 $num_1,num_2 \in b$ 满足 $max(num_1)-min(num_2)\leqslant k$，问最多能找出多少组，并取模 $10^9+7$。</p>
 <p>想到是组合数之后，本想一发 <code>sort</code> 之后从头开始求区间的组合，但是偶发现有问题，由于数据<strong>可能重复</strong>，于是复杂度增加亿点点。</p>
 <p>如数据 $1, 2, 3, 3, 4$ 按上述方法就是 $cnt$ 先加上 $1 \sim  3$ 之间的组合数，求完之后再加上 $2 \sim  4$ 之间的组合数，但是 $1 \sim  3$ 之间的 $2, 3, 3$ 和 $2 \sim  4$ 之间的 $2, 3, 3$ 重复了。<del>于是卡了一节课 窝太菜了</del></p>
@@ -417,7 +417,7 @@ int main(){
 
 </code></pre>
 <p><a href="https://www.luogu.com.cn/problem/CF1462E1" target="_blank" rel="noopener">Easy 版本</a> 就是设组合数的最大最小值之差为 $2$，且每组只查 $3$ 个元素，原理是一样的。</p>
-<h3 id="不开-long-long-见祖宗！！！！！"><a href="#不开-long-long-见祖宗！！！！！" class="headerlink" title="不开 long long 见祖宗！！！！！"></a>不开 long long 见祖宗！！！！！</h3>
+<h3 id="不开龙龙爆零零！！！！"><a href="#不开龙龙爆零零！！！！" class="headerlink" title="不开龙龙爆零零！！！！"></a>不开龙龙爆零零！！！！</h3>
         </div>
         <!-- .entry-content -->
         <div class="single-reward">
@@ -448,9 +448,9 @@ int main(){
           
             <div class="post-nepre half previous">
           
-            <a href="/2021/09/11/P4537 [CQOI2007]矩形/" rel="prev">
+            <a href="/2021/08/28/CF1462E1 Close Tuples (easy)/" rel="prev">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/CDN@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.2/code/2.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.2/code/2.jpg">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/CDN@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.2/code/6.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.2/code/6.jpg">
               </div>
               <span class="label">
               Previous Post</span>
@@ -498,7 +498,7 @@ int main(){
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.0/pics1/avatar.png" itemprop="image" alt="" height="70" width="70"></a>
+          <a href="" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/light-ght/CDN@10.1.2/pics1/avatar.png" itemprop="image" alt="" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">

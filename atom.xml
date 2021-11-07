@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2021-11-06T15:13:50.172Z</updated>
+  <updated>2021-11-07T08:59:14.975Z</updated>
   <id>/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="/2041/09/11/fread/"/>
     <id>/2041/09/11/fread/</id>
     <published>2041-09-11T10:59:00.000Z</published>
-    <updated>2021-11-06T15:13:50.172Z</updated>
+    <updated>2021-11-07T08:59:14.975Z</updated>
     
     <summary type="html">
     
@@ -138,10 +138,30 @@
   
   <entry>
     <title>蒟蒻专属の题解</title>
+    <link href="/2021/08/28/CF1462E1%20Close%20Tuples%20(easy)/"/>
+    <id>/2021/08/28/CF1462E1 Close Tuples (easy)/</id>
+    <published>2021-08-28T02:31:51.000Z</published>
+    <updated>2021-11-07T09:03:46.798Z</updated>
+    
+    <summary type="html">
+    
+      CF1462E2 Close Tuples (easy version)
+    
+    </summary>
+    
+      <category term="题解" scheme="/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>蒟蒻专属の题解</title>
     <link href="/2021/08/28/CF1462E2%20Close%20Tuples%20(hard)/"/>
     <id>/2021/08/28/CF1462E2 Close Tuples (hard)/</id>
     <published>2021-08-28T02:08:00.000Z</published>
-    <updated>2021-10-25T11:26:02.000Z</updated>
+    <updated>2021-11-07T09:03:57.024Z</updated>
     
     <summary type="html">
     
@@ -181,7 +201,7 @@
     <link href="/1920/02/01/Die%20Verfassung/"/>
     <id>/1920/02/01/Die Verfassung/</id>
     <published>1920-01-31T16:00:00.000Z</published>
-    <updated>2021-10-25T11:35:42.000Z</updated>
+    <updated>2021-11-07T08:59:21.797Z</updated>
     
     <summary type="html">
     
@@ -221,7 +241,7 @@
     <link href="/1454/07/22/LaTex-test/"/>
     <id>/1454/07/22/LaTex-test/</id>
     <published>1454-07-22T10:04:00.000Z</published>
-    <updated>2021-11-05T11:07:10.000Z</updated>
+    <updated>2021-11-07T09:06:43.951Z</updated>
     
     <summary type="html">
     
