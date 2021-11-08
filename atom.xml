@@ -137,11 +137,11 @@
   </entry>
   
   <entry>
-    <title>蒟蒻专属の题解</title>
+    <title>蒟蒻专属のCF题解</title>
     <link href="/2021/08/28/CF1462E1%20Close%20Tuples%20(easy)/"/>
     <id>/2021/08/28/CF1462E1 Close Tuples (easy)/</id>
     <published>2021-08-28T02:31:51.000Z</published>
-    <updated>2021-11-07T09:03:46.798Z</updated>
+    <updated>2021-11-08T12:27:48.861Z</updated>
     
     <summary type="html">
     
@@ -157,11 +157,11 @@
   </entry>
   
   <entry>
-    <title>蒟蒻专属の题解</title>
+    <title>蒟蒻专属のCF题解</title>
     <link href="/2021/08/28/CF1462E2%20Close%20Tuples%20(hard)/"/>
     <id>/2021/08/28/CF1462E2 Close Tuples (hard)/</id>
     <published>2021-08-28T02:08:00.000Z</published>
-    <updated>2021-11-07T09:03:57.024Z</updated>
+    <updated>2021-11-08T12:27:41.421Z</updated>
     
     <summary type="html">
     
@@ -177,19 +177,19 @@
   </entry>
   
   <entry>
-    <title>Guten Tag !</title>
-    <link href="/2021/08/20/hello-world/"/>
-    <id>/2021/08/20/hello-world/</id>
-    <published>2021-08-20T01:20:01.000Z</published>
-    <updated>2021-10-18T14:20:40.000Z</updated>
+    <title>蒟蒻专属のCF题解</title>
+    <link href="/2021/08/27/CF967B%20Watering%20System/"/>
+    <id>/2021/08/27/CF967B Watering System/</id>
+    <published>2021-08-27T11:07:50.000Z</published>
+    <updated>2021-11-08T12:30:31.447Z</updated>
     
     <summary type="html">
     
-      The first blog in this continent
+      CF967B Watering System
     
     </summary>
     
-      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+      <category term="题解" scheme="/categories/%E9%A2%98%E8%A7%A3/"/>
     
     
       <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
@@ -210,6 +210,26 @@
     </summary>
     
       <category term="史政" scheme="/categories/%E5%8F%B2%E6%94%BF/"/>
+    
+    
+      <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Guten Tag !</title>
+    <link href="/1901/01/01/hello-world/"/>
+    <id>/1901/01/01/hello-world/</id>
+    <published>1900-12-31T16:00:01.000Z</published>
+    <updated>2021-11-07T10:07:24.100Z</updated>
+    
+    <summary type="html">
+    
+      The first blog in this continent
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
       <category term="总览" scheme="/tags/%E6%80%BB%E8%A7%88/"/>
