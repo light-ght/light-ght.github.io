@@ -156,7 +156,7 @@
   </url>
   
   <url>
-    <loc>/lab/index.html</loc>
+    <loc>/client/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -170,14 +170,14 @@
   </url>
   
   <url>
-    <loc>/rss/index.html</loc>
+    <loc>/lab/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
   </url>
   
   <url>
-    <loc>/client/index.html</loc>
+    <loc>/rss/index.html</loc>
     
     <lastmod>2020-03-15</lastmod>
     
@@ -216,6 +216,13 @@
   </url>
   
   <url>
+    <loc>/categories/%E5%8F%B2%E6%94%BF/</loc>
+    <lastmod>2021-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
@@ -224,13 +231,6 @@
   
   <url>
     <loc>/categories/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2021-11-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/%E5%8F%B2%E6%94%BF/</loc>
     <lastmod>2021-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
