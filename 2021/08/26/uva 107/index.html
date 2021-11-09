@@ -353,24 +353,28 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h5 id="本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"><a href="#本文使用-LaTex-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。" class="headerlink" title="本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"></a>本文使用 $LaTex$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。</h5><p><a href="https://www.luogu.com.cn/problem/UVA107" target="_blank" rel="noopener">题目</a></p>
-<h3 id="非常别扭的数学题"><a href="#非常别扭的数学题" class="headerlink" title="非常别扭的数学题"></a><del>非常别扭的</del>数学题</h3><p>这题面忒长忒绕了点，完全是阅读理解啊！</p>
+          <h5 id="本文使用-LaTeX-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"><a href="#本文使用-LaTeX-语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。" class="headerlink" title="本文使用 $\LaTeX$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。"></a>本文使用 $\LaTeX$ 语法。若出现渲染失败或错误，请刷新页面并耐心等待刷新完成。</h5><p><a href="https://www.luogu.com.cn/problem/UVA107" target="_blank" rel="noopener">题目</a></p>
+<h2 id="非常别扭的数学题"><a href="#非常别扭的数学题" class="headerlink" title="非常别扭的数学题"></a><del>非常别扭的</del>数学题</h2><p>这题面忒长忒绕了点，完全是阅读理解啊！</p>
 <ul>
 <li><p>读了几十遍后，理解的题意大致如下：</p>
 <p>一只猫，高度为 $h$，戴了一个帽子，帽子里面有 $n$ 只猫（$n$ 未知但固定），帽子里面的猫也戴了帽子，但是这些猫的高度变成了 $h / (n+1)$，向上取整。以此递归下去，直到最后的猫的高度都为 $1$ 为止。现在，给出 $h$ 和最终高度为 $1$ 的猫的数量 $m$，要求的是高度大于 $1$ 的猫的数量，以及所有猫的高度之和。</p>
 </li>
 </ul>
-<p><del>该死，还是很绕</del>不愧是你，UVA</p>
+<p><del>该死，还是很绕</del> <strong>不愧是你，UVA</strong></p>
 <ul>
 <li><p>设总共变了 $k$ 次猫。则有以下数学式：</p>
 <p>$1.\ n^k = m\ \Rightarrow\ k = \frac{\log(m)}{\log(n)} $</p>
-<p>$2.\ h\times(\frac{1}{n+1})^k = 1\ \Rightarrow\ k = \frac{\log(h)}{\log(n+1)} $</p>
+<p>$2.\ h\times(\frac{1}{n+1})^k = 1\ \Rightarrow\ k \ = \ \log_\frac{1}{n+1}(\frac{1}{h})\  =\ \frac{\log(h)}{\log(n+1)} $</p>
+<p>以上两个式子是精髓，以下的推导都会用到。</p>
 </li>
-</ul>
-<ul>
-<li><p>那么我们将 $n$ 从 $1$ 向大遍历，直到$\frac{\log(h)}{\log(n+1)} - \frac{\log(m)}{\log(n)} \rightarrow 0 $。在此过程中可能出现负数，那么就可以使用 <code>double</code> 类型的专用取绝对值函数 <code>fabs</code>。</p>
-<p>  注意处理过程中的精度问题以及向上取整问题。</p>
-<p> 实现中还有一个小细节，那就是默认向下取整的问题。当然，我们可以用 <code>ceil</code> 函数解决，但是此处采用了一个更简单的方法：给每个数加 $0.5$。</p>
+<li><p>那么我们将 $n$ 从 $1$ 向大遍历，直到$\frac{\log(h)}{\log(n+1)} - \frac{\log(m)}{\log(n)} \approx 0$。在此过程中可能出现负数，那么就可以使用 <code>double</code> 类型的专用取绝对值函数 <code>fabs</code>。</p>
+<p>  注意处理过程中的精度和整数转化问题。</p>
+<p> 实现中还有一个小细节，那就是默认向下取整，而题目则默认四舍五入的问题。此处采用了一个简单的方法：给每个数加 $0.5$。</p>
+</li>
+<li><p>在 $k=1$ 的时候，易得偷懒的猫数量即为 $1$。</p>
+<p>否则，有数量为 $1+n+n^2+…\ +n^{k-1}=\frac{1-n^{k+1}}{1-n}$。</p>
+</li>
+<li><p>所有猫的高度之和 $sum= h+n\times\frac{h}{n+1}+n^2\times\frac{h}{(n+1)^2}+…\ + n^k\times \frac{h}{(n+1)^k} =h\times(n+1)\times((1-(\frac{n}{n+1})^{k+1} )$。</p>
 </li>
 </ul>
 <p>分析很详尽了，代码就能很快码出来了。</p>
@@ -388,10 +392,10 @@ signed main(){
     while(cin&gt;&gt;h&gt;&gt;m){
         if(!h&amp;&amp;!m)break;
         n=1.0;
-        while(fabs(log(n)/log(n+1)-log(m)/log(h))&gt;=1e-10) //1*10^(-6)已经是很精确的了，当然也可以像我这样取小一些。
+        while(fabs(log(n)/log(m)-log(n+1)/log(h))&gt;=1e-10) //1*10^(-6)已经是很精确的了，当然也可以像我这样取小一些。
             n++;
-        k=int(log(h)/log(n+1)+0.5); //注意加0.5以向上取整
-        if((int)n==1)cout&lt;&lt;(int)k&lt;&lt;&#39; &#39;; //注意取整转化
+        k=int(log(h)/log(n+1)+0.5); //注意加0.5以四舍五入
+        if((int)n==1)cout&lt;&lt;k&lt;&lt;&#39; &#39;; //注意取整转化
         else cout&lt;&lt;int(0.5+(1-pow(n,k))/(1-n))&lt;&lt;&#39; &#39;;
         cout&lt;&lt;int(0.5+(1-pow(n/(n+1),k+1))*(n+1)*h)&lt;&lt;&#39;\n&#39;;
     }
